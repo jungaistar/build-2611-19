@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>기획서 — HEX Protocol Analyzer · Bit 단위 필드</title>
+<!-- seo-kit: 검색 · 공유 미리보기(주소를 옮기면 이 묶음의 주소를 내 주소로) -->
+<link rel="canonical" href="https://build-2611-19.jobability.co.kr/plan.html">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="HD현대사이트솔루션">
+<meta property="og:title" content="기획서 — HEX Protocol Analyzer · Bit 단위 필드">
+<meta property="og:description" content="통신 프로토콜 표와 HCESPN 정의를 등록해 두면 16진수 RAW DATA 를 Byte 별로 자동 해석하는 도구(09번)에, 한 Byte 안의 Bit 몇 개로 정의된 필드(「52.1 / 2 bits」)를 등록 · 검증 · 추출 · 해석하는 기능을 더한 판입니다. Byte 필드와 Bit">
+<meta property="og:url" content="https://build-2611-19.jobability.co.kr/plan.html">
+<meta property="og:image" content="https://build-2611-19.jobability.co.kr/og-image.png?v=2">
+<meta property="og:image:secure_url" content="https://build-2611-19.jobability.co.kr/og-image.png?v=2">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="HEX RAW DATA, Bit 단위까지 한눈에">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="기획서 — HEX Protocol Analyzer · Bit 단위 필드">
+<meta name="twitter:description" content="통신 프로토콜 표와 HCESPN 정의를 등록해 두면 16진수 RAW DATA 를 Byte 별로 자동 해석하는 도구(09번)에, 한 Byte 안의 Bit 몇 개로 정의된 필드(「52.1 / 2 bits」)를 등록 · 검증 · 추출 · 해석하는 기능을 더한 판입니다. Byte 필드와 Bit">
+<meta name="twitter:image" content="https://build-2611-19.jobability.co.kr/og-image.png?v=2">
+<!-- /seo-kit -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.plan-figs figure{margin:0 0 22px;} .plan-figs img{width:100%;height:auto;border:1px solid var(--line);border-radius:10px;background:#fff;}
+.plan-figs figcaption{font-size:13px;color:var(--sub);text-align:center;margin-top:6px;}
+.plan td{white-space:normal;} .plan td .btn{min-height:36px;white-space:nowrap;}
+h3{font-size:15px;margin:16px 0 6px;} main ul{margin:0 0 10px 20px;}
+</style>
+</head>
+<body>
+<nav class="topnav" aria-label="주요 메뉴">
+  <div class="topnav-inner">
+    <a class="topnav-brand" href="index.html">HEX Protocol Analyzer · Bit 단위 필드 <small>build-2611-19 · 기획 차준근</small></a>
+    <ul class="topnav-links">
+      <li><a href="index.html">도구</a></li>
+      <li><a href="guide.html">사용법</a></li>
+      <li><a href="plan.html" class="active" aria-current="page">기획서</a></li>
+    </ul>
+  </div>
+</nav>
+<header class="hero"><div class="wrap">
+  <div class="eyebrow">생성형 AI 업무자동화 전문가과정 · 2차수 · 프로젝트 19 · 기획서 v1.0</div>
+  <h1>HEX Protocol Analyzer · Bit 단위 필드 기획서</h1>
+  <p>통신 프로토콜 표와 HCESPN 정의를 등록해 두면 16진수 RAW DATA 를 Byte 별로 자동 해석하는 도구(09번)에, 한 Byte 안의 Bit 몇 개로 정의된 필드(「52.1 / 2 bits」)를 등록 · 검증 · 추출 · 해석하는 기능을 더한 판입니다. Byte 필드와 Bit 필드를 한 프로토콜에 함께 둘 수 있습니다.</p>
+</div></header>
+<main><div class="wrap">
+<div class="card">
+  <h2 style="margin-top:0">기획서 내려받기</h2>
+  <p class="sub">파이프라인 · 아키텍처 · 와이어프레임 · 개발일지가 들어간 워드 문서입니다. 버전마다 따로 남깁니다.</p>
+  <div class="tablewrap plan"><table><thead><tr><th>버전</th><th>날짜</th><th>바뀐 점</th><th>파일</th></tr></thead><tbody><tr><td><b>v1.0</b></td><td>2026-11-13</td><td>09번 HEX Protocol Analyzer v2.0 을 바탕으로 Bit 단위 필드 추가 — 등록 · 표 붙여넣기 · Bit 범위 검증 · Bit 번호 기준 · 추출 · HCESPN 적용 · 결과표 · Byte Viewer · 엑셀</td><td><a class="btn primary" href="docs/기획서/build-2611-19_차준근_HEXProtocolAnalyzerBit단위필드_기획서_v1.0.docx" download>워드 내려받기</a></td></tr></tbody></table></div>
+</div>
+<div class="card plan">
+  <h2 style="margin-top:0">요구사항과 구현</h2>
+  <div class="tablewrap"><table><thead><tr><th>기획서 요구</th><th>구현</th></tr></thead><tbody><tr><td>Byte 필드와 Bit 필드를 한 프로토콜에 함께 등록</td><td>줄마다 Byte 위치(sp)와 시작 Bit(bit) · Bit 길이(bits)를 따로 저장. Bit 가 없는 줄은 기존 Byte 필드 그대로</td></tr><tr><td>표 붙여넣기에서 52.1 · 2 bits · 1 byte · 6 bytes 인식</td><td>spRange · lenUnit — 「52.1」은 Byte 52 의 Bit 1, 길이는 bit/byte 단위를 구분. 어긋난 표기(시작 Bit 없음 · 단위 불일치 · Bit 9)는 고치지 않고 줄마다 알림</td></tr><tr><td>같은 Byte 에 여러 필드 — 겹침은 실제 Bit 범위로</td><td>validateProtocol 이 모든 필드를 Bit 구간으로 바꿔 겹침을 본다(Bit 끼리, Byte 필드와 Bit 필드 사이). 비어 있는 Bit 는 알림</td></tr><tr><td>Bit 번호 기준을 프로토콜별로 명시, 불명확하면 추정 금지</td><td>프로토콜에 「Bit 번호 기준」(Bit 1 = LSB / MSB). Bit 필드가 있는데 고르지 않으면 저장할 수 없고, 해석도 하지 않고 오류로 알림</td></tr><tr><td>추출 뒤 HCESPN 열거값 · 환산식 · 특수조건 적용, 정의 없으면 RAW 만</td><td>extractBits 로 꺼낸 값에 열거 · 수치 · 수식 형식의 HCESPN 을 적용. 미등록이면 추출 RAW 만. Byte 기준 특수조건은 Bit 필드에 적용하지 않고 알림. 날짜 · 배열 형식은 Bit 필드에 쓸 수 없음(오류)</td></tr><tr><td>결과표에 Byte 위치 · Bit 범위 · 길이와 단위 · 원본 Byte HEX · 추출 RAW · 해석값</td><td>상세 해석 결과표에 「Bit 범위」 열, Length 에 단위, RAW HEX = 원본 Byte, Decimal Value = 추출 RAW. 엑셀에도 같은 열</td></tr><tr><td>Byte Viewer — 한 Byte 에 여러 필드면 Hover 에 모두 표시, Bit 범위 확인</td><td>그 Byte 에 걸린 필드를 모두 보여 주고, 필드마다 8칸 Bit 그림에서 해당 범위를 강조. 여러 필드가 든 Byte 는 점선 테두리</td></tr><tr><td>Byte 경계를 넘는 Bit 필드의 지원 여부를 명확히</td><td>지원하지 않음 — 한 Byte 안(시작 Bit + 길이 ≤ 8)만. 넘으면 붙여넣기 · 검증 · 저장 단계에서 오류로 안내</td></tr><tr><td>기존 Byte 단위 프로토콜 · 분석 이력 호환</td><td>Byte 필드의 읽기 · 검증 · 해석 규칙은 09번 그대로(기존 시험 통과). 19번은 저장 공간이 따로라 09번 자료를 건드리지 않음</td></tr><tr><td>검증 예시 — Bit 1 = LSB, 0xB6 → 2 · 1 · 11, 0xA5 → 5</td><td>테스트에 고정. 예시 프로토콜(E1 B6 A5)로 화면에서도 확인</td></tr><tr><td>메뉴 4개 — 대시보드 · 프로토콜 관리 · HCESPN 관리 · RAW DATA 해석</td><td>왼쪽 사이드바 4개 메뉴. 대시보드에 프로토콜 · HCESPN 현황, 미등록 HCESPN, 최근 분석 이력, 최근 수정 프로토콜</td></tr><tr><td>통신 주체(발신자 · 수신자)</td><td>발신자 MCU · RMCU · 인증장치 + 직접 추가, 수신자 기본 Server</td></tr><tr><td>프로토콜 표 복사 · 붙여넣기 등록</td><td>탭 구분(엑셀) · 마크다운 · 「S.P: …」 글 꼴을 읽어 S.P · Length · Parameter Name · HCESPN · 비고 추출 → 미리보기 표에서 수정 → 저장. 비고 열 없어도 됨</td></tr><tr><td>자동 검증</td><td>필수 열 누락 · S.P 겹침 · 빈 구간 · S.P 범위와 Length 불일치(고치지 않고 알림) · Message Type 자동 추출 · HCESPN 등록 여부 · 중복 등록</td></tr><tr><td>Message Type 별 프로토콜 · 버전 · 누적 저장</td><td>발신자 + Message Type + 버전 단위로 저장. 「새 버전으로 저장」 시 이전 버전 보관, 이전 버전으로 재해석</td></tr><tr><td>HCESPN 등록 — 원문 붙여넣기 → 자동 구조화 → 확인 → 저장</td><td>번호 · 이름 · Data Length · Byte 별 항목 · Resolution · Offset · 유효범위 · Endianness · 특수조건을 찾아 칸에 넣고, 확인 뒤 저장</td></tr></tbody></table></div>
+</div>
+<div class="card plan-figs"><h2 style="margin-top:0">그림으로 보기</h2><figure><img src="docs/img/pipeline.png" alt="처리 흐름(파이프라인)" loading="lazy"><figcaption>처리 흐름(파이프라인)</figcaption></figure><figure><img src="docs/img/architecture.png" alt="구성(아키텍처)" loading="lazy"><figcaption>구성(아키텍처)</figcaption></figure><figure><img src="docs/img/wireframe-1.png" alt="와이어프레임 — 프로토콜 관리" loading="lazy"><figcaption>와이어프레임 — 프로토콜 관리</figcaption></figure><figure><img src="docs/img/wireframe-2.png" alt="와이어프레임 — RAW DATA 해석" loading="lazy"><figcaption>와이어프레임 — RAW DATA 해석</figcaption></figure><figure><img src="docs/img/screen.png" alt="실제 화면(예제 데이터)" loading="lazy"><figcaption>실제 화면(예제 데이터)</figcaption></figure></div>
+<div class="card"><h2 style="margin-top:0">개발일지</h2><h3>2026-11-13 · v1.0 신설(09 + Bit 필드)</h3><ul><li>요청 원문: 패들릿 09 섹션 「protocol 입력값 예외의 경우도 있어, 수정요청드립니다」(2026-11-13). 마감 뒤 애본님 지시로 09 는 그대로 두고 19번으로 신설</li><li>엔진 hcespn.js 에 spRange(52.1) · lenUnit(bits) · extractBits · Bit 구간 겹침 검증 · analyze 의 Bit 분기를 추가. Byte 필드 경로는 손대지 않음</li><li>요청서의 검증 예시(0xB6 · 0xA5)를 테스트에 고정</li><li>예시 프로토콜의 Message Type 은 0xE1(가상) — HCESPN 820~824 는 뜻을 몰라 등록하지 않음</li></ul></div>
+</div></main>
+<footer><div class="wrap">생성형 AI 업무자동화 전문가과정 · 2차수 · 프로젝트 19 · 기획 차준근 · <a href="https://build-2611-00.jobability.co.kr/">2차수 프로젝트 총괄</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,6 @@
+/* 사용법 · 기획서 페이지용(도구 화면은 css/weekly.css) */
+[hidden]{display:none !important;}
+h3{font-size:16px; font-weight:700; margin:24px 0 8px;}
+a{color:var(--accent);}
+.doc h2{margin-top:30px;} .doc ol,.doc ul{margin:0 0 13px 22px;} .doc li{margin-bottom:5px;}
+.tablewrap{max-height:none;} td{white-space:normal;}
